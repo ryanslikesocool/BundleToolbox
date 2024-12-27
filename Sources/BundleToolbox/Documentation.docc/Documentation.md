@@ -2,7 +2,8 @@
 
 ## Overview
 
-Extensions and conveniences for [Bundle](https://developer.apple.com/documentation/foundation/bundle)s.
+Extensions and conveniences for
+[`Bundle`](https://developer.apple.com/documentation/foundation/bundle)s.
 
 
 ## Topics

@@ -35,10 +35,10 @@ and more can be added with a simple declaration.
 ```swift
 // Declare the info dictionary key...
 struct MyCustomValueInfoDictionaryKey: InfoDictionaryKey {
-	// The type of attribute value that the `infoDictionaryKey` points to.
+	// The type of info dictionary value that the `infoDictionaryKey` points to.
 	typealias Value = String
 
-	// The key used to access the attribute value.
+	// The key used to access the info dictionary value.
 	static let infoDictionaryKey: String = "MyCustomValueKey"
 }
 ```
