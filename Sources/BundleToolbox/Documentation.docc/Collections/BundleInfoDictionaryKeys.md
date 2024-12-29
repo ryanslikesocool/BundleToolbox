@@ -25,8 +25,4 @@
 - ``InfoDictionaryObject/cfBundleVersion``
 - ``InfoDictionaryObject/nsHumanReadableCopyright``
 
-
-### Additional Key Constants
-
-- ``kCFBundleShortVersionStringKey``
-- ``kNSHumanReadableCopyrightKey``
+- <doc:AdditionalInfoDictionaryConstants>

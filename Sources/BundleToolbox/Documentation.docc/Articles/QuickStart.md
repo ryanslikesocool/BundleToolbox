@@ -11,7 +11,7 @@ import Foundation
 func readCopyright(from bundle: Bundle) throws -> String {
 	var result: String
 
-	// Read attribute values with a fully qualified info dictionary initializer...
+	// Read attribute values with a fully qualified info dictionary key initializer...
 	result = try bundle.object(
 		forInfoDictionaryKey: InfoDictionaryKeys.NSHumanReadableCopyright()
 	)

@@ -1,3 +1,4 @@
+import DeclarativeCore
 import Foundation
 
 public extension Bundle {
@@ -12,6 +13,10 @@ public extension Bundle {
 		Key: InfoDictionaryObject,
 		Key.Input == Bundle
 	{
+		// TODO: Should we really be restricting `Key: InfoDictionaryObject`?
+		// Should we actually restrict it to `Key: ObjectProcessor`?
+		// A relaxed restriction may allow us to remove `InfoDictionaryObject` conformances for modifiers.
+
 		try infoDictionaryKey.process(self)
 	}
 

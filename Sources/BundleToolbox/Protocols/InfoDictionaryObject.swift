@@ -1,9 +1,6 @@
-public protocol InfoDictionaryObject<Input, Output> {
-	associatedtype Input
-	associatedtype Output
+import DeclarativeCore
 
-	func process(_ input: Input) throws -> Output
-}
+public protocol InfoDictionaryObject<Input, Output>: ObjectProcessor { }
 
 // MARK: - Intrinsic
 
@@ -13,10 +10,10 @@ public extension InfoDictionaryObject {
 	/// - Returns: The attribute with the given `modifier` applied.
 	func modifier<Modifier>(
 		_ modifier: Modifier
-	) -> some InfoDictionaryObject<Self.Input, Modifier.Output> where
+	) -> ModifiedObject<Self, Modifier> where
 		Modifier: InfoDictionaryObject,
 		Self.Output == Modifier.Input
 	{
-		ModifiedContent(upstream: self, downstream: modifier)
+		ModifiedObject(upstream: self, downstream: modifier)
 	}
 }

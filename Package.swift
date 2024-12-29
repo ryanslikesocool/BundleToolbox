@@ -19,8 +19,15 @@ let package = Package(
 			targets: ["BundleToolbox"]
 		),
 	],
+	dependencies: [
+		.package(url: "https://github.com/ryanslikesocool/DeclarativeCore.git", from: "0.0.2"),
+	],
 	targets: [
 		.target(
-			name: "BundleToolbox"),
+			name: "BundleToolbox",
+			dependencies: [
+				"DeclarativeCore",
+			]
+		),
 	]
 )

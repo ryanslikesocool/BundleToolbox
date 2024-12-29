@@ -1,3 +1,4 @@
+import DeclarativeCore
 import Foundation
 
 /// A key for accessing values in a bundle's info dictionary.
