@@ -10,13 +10,19 @@
 ### Declaring Keys
 
 - ``InfoDictionaryKey``
+- <doc:ShorthandInfoDictionaryKeyAccessors>
+- <doc:CustomInfoDictionaryKeyProcessing>
 
 
 ### Keys
 
 - ``InfoDictionaryKeys``
+- ``InfoDictionaryObject/cfBundleAllowMixedLocalizations``
 - ``InfoDictionaryObject/cfBundleDevelopmentRegion``
 - ``InfoDictionaryObject/cfBundleExecutable``
+- ``InfoDictionaryObject/cfBundleIconFile``
+- ``InfoDictionaryObject/cfBundleIconName``
+- ``InfoDictionaryObject/cfBundleIcons``
 - ``InfoDictionaryObject/cfBundleIdentifier``
 - ``InfoDictionaryObject/cfBundleInfoDictionaryVersion``
 - ``InfoDictionaryObject/cfBundleLocalizations``

@@ -1,10 +1,14 @@
 import let CoreFoundation.CFBundle.kCFBundleInfoDictionaryVersionKey
 
+@available(iOS 2, macCatalyst 13, macOS 10, tvOS 9, visionOS 1, watchOS 2, *)
 public extension InfoDictionaryKeys {
-	/// The attribute key for
+	/// The info dictionary key for
 	/// [`kCFBundleInfoDictionaryVersionKey`](https://developer.apple.com/documentation/corefoundation/kcfbundleinfodictionaryversionkey)\.
+	///
+	/// ## See Also
+	/// - ``InfoDictionaryObject/cfBundleInfoDictionaryVersion``
 	struct CFBundleInfoDictionaryVersion: InfoDictionaryKey {
-		public typealias Value = String
+		public typealias Output = String
 
 		public static var infoDictionaryKey: String { kCFBundleInfoDictionaryVersionKey as String }
 
@@ -14,10 +18,15 @@ public extension InfoDictionaryKeys {
 
 // MARK: - Convenience
 
+@available(iOS 2, macCatalyst 13, macOS 10, tvOS 9, visionOS 1, watchOS 2, *)
 public extension InfoDictionaryObject where
 	Self == InfoDictionaryKeys.CFBundleInfoDictionaryVersion
 {
-	/// The shorthand bundle info dictionary key accessor for ``InfoDictionaryKeys/CFBundleInfoDictionaryVersion``.
+	/// The info dictionary key for
+	/// [`kCFBundleInfoDictionaryVersionKey`](https://developer.apple.com/documentation/corefoundation/kcfbundleinfodictionaryversionkey)\.
+	///
+	/// ## See Also
+	/// - ``InfoDictionaryKeys/CFBundleInfoDictionaryVersion``
 	static var cfBundleInfoDictionaryVersion: Self {
 		Self()
 	}

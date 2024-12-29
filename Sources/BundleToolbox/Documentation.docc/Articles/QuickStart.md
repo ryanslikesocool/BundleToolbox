@@ -8,17 +8,19 @@ in the form of the ``InfoDictionaryKey`` protocol.
 ```swift
 import Foundation
 
-func readCopyright(from bundle: Bundle) throws -> String {
+func readCFBundleName(
+	from bundle: Bundle
+) throws -> String {
 	var result: String
 
-	// Read attribute values with a fully qualified info dictionary key initializer...
+	// Read the value with a fully qualified initializer...
 	result = try bundle.object(
-		forInfoDictionaryKey: InfoDictionaryKeys.NSHumanReadableCopyright()
+		forInfoDictionaryKey: InfoDictionaryKeys.CFBundleName()
 	)
 
-	// ...or with a shorthand info dictionary key accessor.
+	// ...or with a shorthand accessor.
 	result = try bundle.object(
-		forInfoDictionaryKey: .nsHumanReadableCopyright
+		forInfoDictionaryKey: .cfBundleName
 	)
 
 	return result
@@ -36,7 +38,7 @@ and more can be added with a simple declaration.
 // Declare the info dictionary key...
 struct MyCustomValueInfoDictionaryKey: InfoDictionaryKey {
 	// The type of info dictionary value that the `infoDictionaryKey` points to.
-	typealias Value = String
+	typealias Output = String
 
 	// The key used to access the info dictionary value.
 	static let infoDictionaryKey: String = "MyCustomValueKey"

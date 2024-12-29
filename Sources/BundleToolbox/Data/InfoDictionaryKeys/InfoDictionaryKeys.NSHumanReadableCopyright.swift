@@ -1,7 +1,11 @@
+@available(macOS 10, *)
 public extension InfoDictionaryKeys {
-	/// The attribute key for ``kNSHumanReadableCopyrightKey``.
+	/// The info dictionary key for ``kNSHumanReadableCopyrightKey``.
+	///
+	/// ## See Also
+	/// - ``InfoDictionaryObject/nsHumanReadableCopyright``
 	struct NSHumanReadableCopyright: InfoDictionaryKey {
-		public typealias Value = String
+		public typealias Output = String
 
 		public static var infoDictionaryKey: String { kNSHumanReadableCopyrightKey }
 
@@ -11,10 +15,14 @@ public extension InfoDictionaryKeys {
 
 // MARK: - Convenience
 
+@available(macOS 10, *)
 public extension InfoDictionaryObject where
 	Self == InfoDictionaryKeys.NSHumanReadableCopyright
 {
-	/// The shorthand bundle info dictionary key accessor for ``InfoDictionaryKeys/NSHumanReadableCopyright``.
+	/// The info dictionary key for ``kNSHumanReadableCopyrightKey``.
+	///
+	/// ## See Also
+	/// - ``InfoDictionaryKeys/NSHumanReadableCopyright``
 	static var nsHumanReadableCopyright: Self {
 		Self()
 	}

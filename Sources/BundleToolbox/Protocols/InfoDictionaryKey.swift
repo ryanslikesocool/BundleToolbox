@@ -3,13 +3,8 @@ import Foundation
 
 /// A key for accessing values in a bundle's info dictionary.
 public protocol InfoDictionaryKey: InfoDictionaryObject where
-	Input == Bundle,
-	Output == Value
+	Input == Bundle
 {
-	/// The expected type of the value returned by
-	/// [`object(forInfoDictionaryKey:)`](https://developer.apple.com/documentation/foundation/bundle/1408696-object)\.
-	associatedtype Value
-
 	/// The underlying info dictionary key.
 	///
 	/// Info dictionary key constants can be found in the documentation for
@@ -20,11 +15,14 @@ public protocol InfoDictionaryKey: InfoDictionaryObject where
 // MARK: - Default Implementation
 
 public extension InfoDictionaryKey {
+	/// Retrieve and process the info dictionary object with the ``infoDictionaryKey``.
 	func process(_ input: Input) throws -> Output {
-		let originalValue = input.object(forInfoDictionaryKey: Self.infoDictionaryKey)
-		guard let castValue = originalValue as? Output else {
-			throw InfoDictionaryError.castFailed(input: type(of: originalValue), output: Output.self)
+		let infoDictionaryValue = input.object(forInfoDictionaryKey: Self.infoDictionaryKey)
+
+		guard let resultValue = infoDictionaryValue as? Output else {
+			throw InfoDictionaryError.castFailed(from: infoDictionaryValue, to: Output.self)
 		}
-		return castValue
+
+		return resultValue
 	}
 }

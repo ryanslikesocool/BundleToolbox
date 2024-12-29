@@ -1,14 +1,18 @@
 import let CoreFoundation.CFBundle.kCFBundleIdentifierKey
 
+@available(iOS 2, macCatalyst 13, macOS 10, tvOS 9, visionOS 1, watchOS 2, *)
 public extension InfoDictionaryKeys {
-	/// The attribute key for
+	/// The info dictionary key for
 	/// [`kCFBundleIdentifierKey`](https://developer.apple.com/documentation/corefoundation/kcfbundleidentifierkey)\.
 	///
 	/// - Remark: Using the
 	/// [`bundleIdentifier`](https://developer.apple.com/documentation/foundation/bundle/1418023-bundleidentifier)
-	/// property on the bundle is preferred over this key.
+	/// property on the bundle is preferred over using this key.
+	///
+	/// ## See Also
+	/// - ``InfoDictionaryObject/cfBundleIdentifier``
 	struct CFBundleIdentifier: InfoDictionaryKey {
-		public typealias Value = String
+		public typealias Output = String
 
 		public static var infoDictionaryKey: String { kCFBundleIdentifierKey as String }
 
@@ -18,14 +22,19 @@ public extension InfoDictionaryKeys {
 
 // MARK: - Convenience
 
+@available(iOS 2, macCatalyst 13, macOS 10, tvOS 9, visionOS 1, watchOS 2, *)
 public extension InfoDictionaryObject where
 	Self == InfoDictionaryKeys.CFBundleIdentifier
 {
-	/// The shorthand bundle info dictionary key accessor for ``InfoDictionaryKeys/CFBundleIdentifier``.
+	/// The info dictionary key for
+	/// [`kCFBundleIdentifierKey`](https://developer.apple.com/documentation/corefoundation/kcfbundleidentifierkey)\.
 	///
 	/// - Remark: Using the
 	/// [`bundleIdentifier`](https://developer.apple.com/documentation/foundation/bundle/1418023-bundleidentifier)
-	/// property on the bundle is preferred over this key.
+	/// property on the bundle is preferred over using this key.
+	///
+	/// ## See Also
+	/// - ``InfoDictionaryKeys/CFBundleIdentifier``
 	static var cfBundleIdentifier: Self {
 		Self()
 	}
