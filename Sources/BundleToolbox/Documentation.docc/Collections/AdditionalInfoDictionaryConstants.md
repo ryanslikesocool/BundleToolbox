@@ -6,8 +6,12 @@ Constants for info dictionary keys that are not already declared by a system fra
 ## Topics
 
 - ``kCFBundleAllowMixedLocalizationsKey``
+- ``kCFBundleAlternateIconsKey``
 - ``kCFBundleIconFileKey``
+- ``kCFBundleIconFilesKey``
 - ``kCFBundleIconNameKey``
 - ``kCFBundleIconsKey``
+- ``kCFBundlePrimaryIconKey``
 - ``kCFBundleShortVersionStringKey``
+- ``kCFBundleSymbolNameKey``
 - ``kNSHumanReadableCopyrightKey``

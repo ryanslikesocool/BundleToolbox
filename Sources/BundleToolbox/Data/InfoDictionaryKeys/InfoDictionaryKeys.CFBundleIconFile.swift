@@ -1,4 +1,3 @@
-import DeclarativeCore
 #if canImport(AppKit)
 import AppKit
 #endif

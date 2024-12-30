@@ -10,6 +10,7 @@
 ### Declaring Keys
 
 - ``InfoDictionaryKey``
+- ``RelativeInfoDictionaryKey``
 - <doc:ShorthandInfoDictionaryKeyAccessors>
 - <doc:CustomInfoDictionaryKeyProcessing>
 
@@ -21,12 +22,14 @@
 - ``InfoDictionaryObject/cfBundleDevelopmentRegion``
 - ``InfoDictionaryObject/cfBundleExecutable``
 - ``InfoDictionaryObject/cfBundleIconFile``
+- ``InfoDictionaryObject/cfBundleIconFiles``
 - ``InfoDictionaryObject/cfBundleIconName``
 - ``InfoDictionaryObject/cfBundleIcons``
 - ``InfoDictionaryObject/cfBundleIdentifier``
 - ``InfoDictionaryObject/cfBundleInfoDictionaryVersion``
 - ``InfoDictionaryObject/cfBundleLocalizations``
 - ``InfoDictionaryObject/cfBundleName``
+- ``InfoDictionaryObject/cfBundlePrimaryIcon``
 - ``InfoDictionaryObject/cfBundleShortVersionString``
 - ``InfoDictionaryObject/cfBundleVersion``
 - ``InfoDictionaryObject/nsHumanReadableCopyright``

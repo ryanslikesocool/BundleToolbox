@@ -1,6 +1,17 @@
 import DeclarativeCore
 
-public protocol InfoDictionaryObject<Input, Output>: ObjectProcessor { }
+public protocol InfoDictionaryObject<Input, Output>: ObjectProcessor {
+	// Shadows `ObjectProcessor.Input`
+	/// The type of the argument for ``process(_:)``.
+	associatedtype Input
+
+	// Shadows `ObjectProcessor.Output`
+	/// The type of the value returned by ``process(_:)``.
+	associatedtype Output
+
+	// Shadows `ObjectProcessor.process(_:)`
+	func process(_ input: Input) throws -> Output
+}
 
 // MARK: - Intrinsic
 
@@ -17,3 +28,11 @@ public extension InfoDictionaryObject {
 		ModifiedObject(upstream: self, downstream: modifier)
 	}
 }
+
+// MARK: - Default Conformances
+
+extension ObjectProcessorModifiers.Map: InfoDictionaryObject { }
+extension ObjectProcessorModifiers.CompactMap: InfoDictionaryObject { }
+extension ObjectProcessorModifiers.FlatMap: InfoDictionaryObject { }
+extension ObjectProcessorModifiers.Filter: InfoDictionaryObject { }
+extension ObjectProcessorModifiers.Sort: InfoDictionaryObject { }

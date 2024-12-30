@@ -1,3 +1,5 @@
+import DeclarativeCore
+
 @available(iOS 5, tvOS 9, visionOS 1, watchOS 2, *)
 public extension InfoDictionaryKeys {
 	/// The info dictionary key for ``kCFBundleIconsKey``.
@@ -25,5 +27,19 @@ public extension InfoDictionaryObject where
 	/// - ``InfoDictionaryKeys/CFBundleIcons``
 	static var cfBundleIcons: Self {
 		Self()
+	}
+}
+
+// MARK: - Modifiers
+
+@available(iOS 5, tvOS 9, visionOS 1, watchOS 2, *)
+public extension InfoDictionaryKeys.CFBundleIcons {
+	/// The info dictionary key for ``kCFBundlePrimaryIconKey``, relative to ``kCFBundleIconsKey``.
+	///
+	/// ## See Also
+	/// - ``InfoDictionaryKeys/CFBundlePrimaryIcon``
+	/// - ``InfoDictionaryObject/cfBundlePrimaryIcon``
+	var cfBundlePrimaryIcon: some InfoDictionaryObject<Input, InfoDictionaryKeys.CFBundlePrimaryIcon.Output> {
+		appending(.cfBundlePrimaryIcon)
 	}
 }
