@@ -48,7 +48,7 @@ public extension InfoDictionaryKeys.CFBundleIconFile {
 	) -> some InfoDictionaryObject<Self.Input, NSImage> {
 		map { (input: Self.Output) throws -> NSImage in
 			guard let nsImage: NSImage = bundle.image(forResource: input) else {
-				throw InfoDictionaryError.unexpectedNil
+				throw InfoDictionaryError.missingBundleResource(named: input)
 			}
 			return nsImage
 		}

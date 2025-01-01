@@ -8,3 +8,7 @@ Extensions and conveniences for Apple's bundle APIs.
 - <doc:QuickStart>
 - <doc:BundleInfoDictionaryKeys>
 - <doc:BundleInfoDictionaryModifiers>
+
+### Errors
+
+- ``InfoDictionaryError``

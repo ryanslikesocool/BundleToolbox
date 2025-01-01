@@ -13,14 +13,18 @@
 - ``RelativeInfoDictionaryKey``
 - <doc:ShorthandInfoDictionaryKeyAccessors>
 - <doc:CustomInfoDictionaryKeyProcessing>
+- <doc:InfoDictionaryKeyConstants>
 
 
 ### Keys
 
 - ``InfoDictionaryKeys``
+- ``InfoDictionaryObject/cfAppleHelpAnchor``
 - ``InfoDictionaryObject/cfBundleAllowMixedLocalizations``
 - ``InfoDictionaryObject/cfBundleDevelopmentRegion``
 - ``InfoDictionaryObject/cfBundleExecutable``
+- ``InfoDictionaryObject/cfBundleHelpBookFolder``
+- ``InfoDictionaryObject/cfBundleHelpBookName``
 - ``InfoDictionaryObject/cfBundleIconFile``
 - ``InfoDictionaryObject/cfBundleIconFiles``
 - ``InfoDictionaryObject/cfBundleIconName``
@@ -31,7 +35,20 @@
 - ``InfoDictionaryObject/cfBundleName``
 - ``InfoDictionaryObject/cfBundlePrimaryIcon``
 - ``InfoDictionaryObject/cfBundleShortVersionString``
+- ``InfoDictionaryObject/cfBundleSpokenName``
 - ``InfoDictionaryObject/cfBundleVersion``
+- ``InfoDictionaryObject/lsMinimumSystemVersion``
+- ``InfoDictionaryObject/lsMinimumSystemVersionByArchitecture``
+- ``InfoDictionaryObject/lsRequiresIPhoneOS``
+- ``InfoDictionaryObject/lsUIElement``
+- ``InfoDictionaryObject/lsUIPresentationMode``
+- ``InfoDictionaryObject/minimumOSVersion``
+- ``InfoDictionaryObject/minimumPlatformVersion``
 - ``InfoDictionaryObject/nsHumanReadableCopyright``
-
-- <doc:AdditionalInfoDictionaryConstants>
+- ``InfoDictionaryObject/tiCapsLockLanguageSwitchCapable``
+- ``InfoDictionaryObject/uiInterfaceOrientation``
+- ``InfoDictionaryObject/uiLaunchToFullScreenByDefaultOnMac``
+- ``InfoDictionaryObject/uiPrerenderedIcon``
+- ``InfoDictionaryObject/uiRequiresFullScreen``
+- ``InfoDictionaryObject/uiSupportedInterfaceOrientations``
+- ``InfoDictionaryObject/uiSupportsTrueScreenSizeOnMac``
