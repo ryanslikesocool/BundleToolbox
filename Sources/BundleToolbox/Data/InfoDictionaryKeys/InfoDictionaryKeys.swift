@@ -1,3 +1,3 @@
-/// The namespace for bundle info dictionary keys.
+/// The namespace for info dictionary keys.
 @frozen
 public enum InfoDictionaryKeys { }

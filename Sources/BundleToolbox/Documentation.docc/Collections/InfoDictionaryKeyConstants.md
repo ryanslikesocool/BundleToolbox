@@ -36,5 +36,4 @@ Constants for info dictionary keys that are not already declared by a system fra
 
 ### Related Constants
 
-- <doc:CFBundleExecutableArchitectureConstants>
 - <doc:UIInterfaceOrientationConstants>
