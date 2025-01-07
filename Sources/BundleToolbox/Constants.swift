@@ -143,6 +143,20 @@ public let kMinimumOSVersionKey: String = "MinimumOSVersion"
 @available(macOS 10, *)
 public let kNSHumanReadableCopyrightKey: String = "NSHumanReadableCopyright"
 
+/// A Boolean value indicating whether the app supports automatic termination.
+///
+/// The constant for
+/// [`automaticTerminationSupportEnabled`]( https://developer.apple.com/documentation/foundation/processinfo/1407578-automaticterminationsupportenabl ).
+@available(macOS 10.7, *)
+public let kNSSupportsAutomaticTerminationKey: String = "NSSupportsAutomaticTermination"
+
+/// A Boolean value indicating whether the system may terminate the app to log out or shut down more quickly.
+///
+/// The constant for
+/// [`NSSupportsSuddenTermination`]( https://developer.apple.com/documentation/bundleresources/information-property-list/nssupportssuddentermination ).
+@available(macOS 10, *)
+public let kNSSupportsSuddenTerminationKey: String = "NSSupportsSuddenTermination"
+
 /// A Boolean value that enables the Caps Lock key to switch between Latin and non-Latin input sources.
 ///
 /// The constant for

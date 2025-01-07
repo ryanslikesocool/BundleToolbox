@@ -45,6 +45,8 @@
 - ``InfoDictionaryObject/minimumOSVersion``
 - ``InfoDictionaryObject/minimumPlatformVersion``
 - ``InfoDictionaryObject/nsHumanReadableCopyright``
+- ``InfoDictionaryObject/nsSupportsAutomaticTermination``
+- ``InfoDictionaryObject/nsSupportsSuddenTermination``
 - ``InfoDictionaryObject/tiCapsLockLanguageSwitchCapable``
 - ``InfoDictionaryObject/uiInterfaceOrientation``
 - ``InfoDictionaryObject/uiLaunchToFullScreenByDefaultOnMac``

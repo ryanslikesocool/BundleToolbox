@@ -25,6 +25,8 @@ Constants for info dictionary keys that are not already declared by a system fra
 - ``kLSUIPresentationModeKey``
 - ``kMinimumOSVersionKey``
 - ``kNSHumanReadableCopyrightKey``
+- ``kNSSupportsAutomaticTerminationKey``
+- ``kNSSupportsSuddenTerminationKey``
 - ``kTICapsLockLanguageSwitchCapableKey``
 - ``kUIInterfaceOrientationKey``
 - ``kUILaunchToFullScreenByDefaultOnMacKey``
