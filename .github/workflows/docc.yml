@@ -36,7 +36,7 @@ jobs:
         with:
           path: .docs
 
-	#1
+  #1
   deploy:
     #2
     runs-on: ubuntu-latest
