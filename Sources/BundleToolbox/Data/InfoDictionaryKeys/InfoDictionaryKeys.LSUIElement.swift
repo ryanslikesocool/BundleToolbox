@@ -2,12 +2,15 @@
 public extension InfoDictionaryKeys {
 	/// The info dictionary key for ``kLSUIElementKey``.
 	///
-	/// ## See Also
+	/// ## Topics
+	/// ### Convenience
 	/// - ``InfoDictionaryObject/lsUIElement``
 	struct LSUIElement: InfoDictionaryKey {
 		public typealias Output = Bool
 
-		public static var infoDictionaryKey: String { kLSUIElementKey }
+		public static var infoDictionaryKey: String {
+			kLSUIElementKey
+		}
 
 		public init() { }
 	}

@@ -5,18 +5,14 @@
 /// However, apps can request that all UI elements be hidden as well.
 ///
 /// ## Topics
-///
 /// ### Enumeration Cases
-///
 /// - ``normal``
 /// - ``contentSuppressed``
 /// - ``contentHidden``
 /// - ``allHidden``
 /// - ``allSuppressed``
 ///
-///
 /// ## See Also
-///
 /// - ``kLSUIPresentationModeKey``
 @available(macOS 10, *)
 public enum LSUIPresentationMode: Int {

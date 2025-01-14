@@ -4,12 +4,15 @@ import class Foundation.Bundle
 public extension InfoDictionaryKeys {
 	/// The info dictionary key for ``kLSUIPresentationModeKey``.
 	///
-	/// ## See Also
+	/// ## Topics
+	/// ### Convenience
 	/// - ``InfoDictionaryObject/lsUIPresentationMode``
 	struct LSUIPresentationMode: InfoDictionaryKey {
 		public typealias Output = BundleToolbox.LSUIPresentationMode
 
-		public static var infoDictionaryKey: String { kLSUIPresentationModeKey }
+		public static var infoDictionaryKey: String {
+			kLSUIPresentationModeKey
+		}
 
 		public init() { }
 

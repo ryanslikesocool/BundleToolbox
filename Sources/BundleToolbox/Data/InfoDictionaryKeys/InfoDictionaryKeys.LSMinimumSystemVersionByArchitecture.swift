@@ -4,12 +4,15 @@ import class Foundation.Bundle
 public extension InfoDictionaryKeys {
 	/// The info dictionary key for ``kLSMinimumSystemVersionByArchitectureKey``.
 	///
-	/// ## See Also
+	/// ## Topics
+	/// ### Convenience
 	/// - ``InfoDictionaryObject/lsMinimumSystemVersionByArchitecture``
 	struct LSMinimumSystemVersionByArchitecture: InfoDictionaryKey {
 		public typealias Output = [String: String]
 
-		public static var infoDictionaryKey: String { kLSMinimumSystemVersionByArchitectureKey }
+		public static var infoDictionaryKey: String {
+			kLSMinimumSystemVersionByArchitectureKey
+		}
 
 		public init() { }
 	}

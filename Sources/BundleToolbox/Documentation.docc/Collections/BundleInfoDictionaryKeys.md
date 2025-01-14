@@ -6,18 +6,14 @@
 
 - ``Foundation/Bundle/object(forInfoDictionaryKey:)``
 
-
 ### Declaring Keys
-
 - ``InfoDictionaryKey``
 - ``RelativeInfoDictionaryKey``
 - <doc:ShorthandInfoDictionaryKeyAccessors>
 - <doc:CustomInfoDictionaryKeyProcessing>
 - <doc:InfoDictionaryKeyConstants>
 
-
 ### Keys
-
 - ``InfoDictionaryKeys``
 - ``InfoDictionaryObject/cfAppleHelpAnchor``
 - ``InfoDictionaryObject/cfBundleAllowMixedLocalizations``

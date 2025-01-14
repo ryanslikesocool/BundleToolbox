@@ -2,12 +2,15 @@
 public extension InfoDictionaryKeys {
 	/// The info dictionary key for ``kCFBundleSpokenNameKey``.
 	///
-	/// ## See Also
+	/// ## Topics
+	/// ### Convenience
 	/// - ``InfoDictionaryObject/cfBundleSpokenName``
 	struct CFBundleSpokenName: InfoDictionaryKey {
 		public typealias Output = String
 
-		public static var infoDictionaryKey: String { kCFBundleSpokenNameKey }
+		public static var infoDictionaryKey: String {
+			kCFBundleSpokenNameKey
+		}
 
 		public init() { }
 	}

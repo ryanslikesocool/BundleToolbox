@@ -2,12 +2,15 @@
 public extension InfoDictionaryKeys {
 	/// The info dictionary key for ``kCFBundleHelpBookFolderKey``.
 	///
-	/// ## See Also
+	/// ## Topics
+	/// ### Convenience
 	/// - ``InfoDictionaryObject/cfBundleHelpBookFolder``
 	struct CFBundleHelpBookFolder: InfoDictionaryKey {
 		public typealias Output = String
 
-		public static var infoDictionaryKey: String { kCFBundleHelpBookFolderKey }
+		public static var infoDictionaryKey: String {
+			kCFBundleHelpBookFolderKey
+		}
 
 		public init() { }
 	}

@@ -9,6 +9,8 @@ Extensions and conveniences for Apple's bundle APIs.
 - <doc:BundleInfoDictionaryKeys>
 - <doc:BundleInfoDictionaryModifiers>
 
-### Errors
+### Constants
+- ``LSUIPresentationMode``
 
+### Errors
 - ``InfoDictionaryError``

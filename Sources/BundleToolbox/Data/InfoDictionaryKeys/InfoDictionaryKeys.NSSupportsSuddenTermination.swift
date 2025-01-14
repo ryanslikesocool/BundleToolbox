@@ -2,12 +2,15 @@
 public extension InfoDictionaryKeys {
 	/// The info dictionary key for ``kNSSupportsSuddenTerminationKey``.
 	///
-	/// ## See Also
+	/// ## Topics
+	/// ### Convenience
 	/// - ``InfoDictionaryObject/nsSupportsSuddenTermination``
 	struct NSSupportsSuddenTermination: InfoDictionaryKey {
 		public typealias Output = Bool
 
-		public static var infoDictionaryKey: String { kNSSupportsSuddenTerminationKey }
+		public static var infoDictionaryKey: String {
+			kNSSupportsSuddenTerminationKey
+		}
 
 		public init() { }
 	}

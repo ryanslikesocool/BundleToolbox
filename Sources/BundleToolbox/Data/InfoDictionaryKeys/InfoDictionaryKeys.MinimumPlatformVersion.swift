@@ -7,7 +7,8 @@ public extension InfoDictionaryKeys {
 	/// | Mac Catalyst, macOS | ``kLSMinimumSystemVersionKey`` |
 	/// | iOS, iPadOS, tvOS, visionOS, watchOS | ``kMinimumOSVersionKey`` |
 	///
-	/// ## See Also
+	/// ## Topics
+	/// ### Convenience
 	/// - ``InfoDictionaryObject/minimumPlatformVersion``
 	struct MinimumPlatformVersion: InfoDictionaryKey {
 		public typealias Output = String

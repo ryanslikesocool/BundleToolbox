@@ -2,12 +2,15 @@
 public extension InfoDictionaryKeys {
 	/// The info dictionary key for ``kCFAppleHelpAnchorKey``.
 	///
-	/// ## See Also
+	/// ## Topics
+	/// ### Convenience
 	/// - ``InfoDictionaryObject/cfAppleHelpAnchor``
 	struct CFAppleHelpAnchor: InfoDictionaryKey {
 		public typealias Output = String
 
-		public static var infoDictionaryKey: String { kCFAppleHelpAnchorKey }
+		public static var infoDictionaryKey: String {
+			kCFAppleHelpAnchorKey
+		}
 
 		public init() { }
 	}

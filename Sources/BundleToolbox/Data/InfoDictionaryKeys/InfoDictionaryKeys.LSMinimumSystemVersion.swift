@@ -4,12 +4,15 @@ public extension InfoDictionaryKeys {
 	///
 	/// For iOS, iPadOS, tvOS, visionOS, or watchOS, see ``InfoDictionaryKeys/MinimumOSVersion``.
 	///
-	/// ## See Also
+	/// ## Topics
+	/// ### Convenience
 	/// - ``InfoDictionaryObject/lsMinimumSystemVersion``
 	struct LSMinimumSystemVersion: InfoDictionaryKey {
 		public typealias Output = String
 
-		public static var infoDictionaryKey: String { kLSMinimumSystemVersionKey }
+		public static var infoDictionaryKey: String {
+			kLSMinimumSystemVersionKey
+		}
 
 		public init() { }
 	}

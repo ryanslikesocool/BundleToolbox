@@ -7,7 +7,8 @@ import UIKit
 public extension InfoDictionaryKeys {
 	/// The info dictionary key for ``kUISupportedInterfaceOrientationsKey``.
 	///
-	/// ## See Also
+	/// ## Topics
+	/// ### Convenience
 	/// - ``InfoDictionaryObject/uiSupportedInterfaceOrientations``
 	struct UISupportedInterfaceOrientations: InfoDictionaryKey {
 #if canImport(UIKit)
@@ -16,7 +17,9 @@ public extension InfoDictionaryKeys {
 		public typealias Output = [String]
 #endif
 
-		public static var infoDictionaryKey: String { kUISupportedInterfaceOrientationsKey }
+		public static var infoDictionaryKey: String {
+			kUISupportedInterfaceOrientationsKey
+		}
 
 		public init() { }
 

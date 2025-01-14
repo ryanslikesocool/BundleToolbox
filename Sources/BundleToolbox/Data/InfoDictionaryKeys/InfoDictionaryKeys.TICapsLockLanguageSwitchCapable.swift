@@ -2,12 +2,15 @@
 public extension InfoDictionaryKeys {
 	/// The info dictionary key for ``kTICapsLockLanguageSwitchCapableKey``.
 	///
-	/// ## See Also
+	/// ## Topics
+	/// ### Convenience
 	/// - ``InfoDictionaryObject/tiCapsLockLanguageSwitchCapable``
 	struct TICapsLockLanguageSwitchCapable: InfoDictionaryKey {
 		public typealias Output = Bool
 
-		public static var infoDictionaryKey: String { kTICapsLockLanguageSwitchCapableKey }
+		public static var infoDictionaryKey: String {
+			kTICapsLockLanguageSwitchCapableKey
+		}
 
 		public init() { }
 	}

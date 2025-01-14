@@ -6,12 +6,17 @@ public extension InfoDictionaryKeys {
 	/// The info dictionary key for ``kCFBundlePrimaryIconKey``.
 	///
 	/// ## See Also
-	/// - ``InfoDictionaryObject/cfBundlePrimaryIcon``
 	/// - ``InfoDictionaryKeys/CFBundleIcons/cfBundlePrimaryIcon``
+	///
+	/// ## Topics
+	/// ### Convenience
+	/// - ``InfoDictionaryObject/cfBundlePrimaryIcon``
 	struct CFBundlePrimaryIcon: InfoDictionaryKey {
 		public typealias Output = [String: Any]
 
-		public static var infoDictionaryKey: String { kCFBundlePrimaryIconKey }
+		public static var infoDictionaryKey: String {
+			kCFBundlePrimaryIconKey
+		}
 
 		public init() { }
 	}

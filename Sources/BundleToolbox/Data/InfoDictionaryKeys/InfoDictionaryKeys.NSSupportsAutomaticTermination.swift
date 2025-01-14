@@ -2,12 +2,15 @@
 public extension InfoDictionaryKeys {
 	/// The info dictionary key for ``kNSSupportsAutomaticTerminationKey``.
 	///
-	/// ## See Also
+	/// ## Topics
+	/// ### Convenience
 	/// - ``InfoDictionaryObject/nsSupportsAutomaticTermination``
 	struct NSSupportsAutomaticTermination: InfoDictionaryKey {
 		public typealias Output = Bool
 
-		public static var infoDictionaryKey: String { kNSSupportsAutomaticTerminationKey }
+		public static var infoDictionaryKey: String {
+			kNSSupportsAutomaticTerminationKey
+		}
 
 		public init() { }
 	}

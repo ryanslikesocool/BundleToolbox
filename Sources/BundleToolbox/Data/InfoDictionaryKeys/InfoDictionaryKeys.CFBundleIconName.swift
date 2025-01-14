@@ -11,13 +11,16 @@ import DeveloperToolsSupport
 public extension InfoDictionaryKeys {
 	/// The info dictionary key for ``kCFBundleIconNameKey``.
 	///
-	/// ## See Also
+	/// ## Topics
+	/// ### Convenience
 	/// - ``InfoDictionaryObject/cfBundleIconName``
 	/// - ``InfoDictionaryKeys/CFBundlePrimaryIcon/cfBundleIconName``
 	struct CFBundleIconName: InfoDictionaryKey {
 		public typealias Output = String
 
-		public static var infoDictionaryKey: String { kCFBundleIconNameKey }
+		public static var infoDictionaryKey: String {
+			kCFBundleIconNameKey
+		}
 
 		public init() { }
 	}

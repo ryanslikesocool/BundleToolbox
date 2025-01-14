@@ -2,12 +2,15 @@
 public extension InfoDictionaryKeys {
 	/// The info dictionary key for ``kUIRequiresFullScreenKey``.
 	///
-	/// ## See Also
+	/// ## Topics
+	/// ### Convenience
 	/// - ``InfoDictionaryObject/uiRequiresFullScreen``
 	struct UIRequiresFullScreen: InfoDictionaryKey {
 		public typealias Output = Bool
 
-		public static var infoDictionaryKey: String { kUIRequiresFullScreenKey }
+		public static var infoDictionaryKey: String {
+			kUIRequiresFullScreenKey
+		}
 
 		public init() { }
 	}

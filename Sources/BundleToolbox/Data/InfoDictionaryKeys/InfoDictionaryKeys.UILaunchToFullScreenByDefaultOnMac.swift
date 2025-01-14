@@ -2,12 +2,15 @@
 public extension InfoDictionaryKeys {
 	/// The info dictionary key for ``kUILaunchToFullScreenByDefaultOnMacKey``.
 	///
-	/// ## See Also
+	/// ## Topics
+	/// ### Convenience
 	/// - ``InfoDictionaryObject/uiLaunchToFullScreenByDefaultOnMac``
 	struct UILaunchToFullScreenByDefaultOnMac: InfoDictionaryKey {
 		public typealias Output = Bool
 
-		public static var infoDictionaryKey: String { kUILaunchToFullScreenByDefaultOnMacKey }
+		public static var infoDictionaryKey: String {
+			kUILaunchToFullScreenByDefaultOnMacKey
+		}
 
 		public init() { }
 	}

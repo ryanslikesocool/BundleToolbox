@@ -2,12 +2,15 @@
 public extension InfoDictionaryKeys {
 	/// The info dictionary key for ``kLSRequiresIPhoneOSKey``.
 	///
-	/// ## See Also
+	/// ## Topics
+	/// ### Convenience
 	/// - ``InfoDictionaryObject/lsRequiresIPhoneOS``
 	struct LSRequiresIPhoneOS: InfoDictionaryKey {
 		public typealias Output = Bool
 
-		public static var infoDictionaryKey: String { kLSRequiresIPhoneOSKey }
+		public static var infoDictionaryKey: String {
+			kLSRequiresIPhoneOSKey
+		}
 
 		public init() { }
 	}

@@ -35,7 +35,5 @@ Constants for info dictionary keys that are not already declared by a system fra
 - ``kUISupportedInterfaceOrientationsKey``
 - ``kUISupportsTrueScreenSizeOnMacKey``
 
-
 ### Related Constants
-
 - <doc:UIInterfaceOrientationConstants>

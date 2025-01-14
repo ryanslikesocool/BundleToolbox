@@ -4,12 +4,15 @@ public extension InfoDictionaryKeys {
 	///
 	/// For Mac Catalyst and macOS, see ``InfoDictionaryKeys/LSMinimumSystemVersion``.
 	///
-	/// ## See Also
+	/// ## Topics
+	/// ### Convenience
 	/// - ``InfoDictionaryObject/minimumOSVersion``
 	struct MinimumOSVersion: InfoDictionaryKey {
 		public typealias Output = String
 
-		public static var infoDictionaryKey: String { kMinimumOSVersionKey }
+		public static var infoDictionaryKey: String {
+			kMinimumOSVersionKey
+		}
 
 		public init() { }
 	}

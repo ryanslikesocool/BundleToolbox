@@ -1,5 +1,9 @@
 import DeclarativeCore
 
+/// ## Topics
+/// ### Type-erased Objects
+/// - ``AnyInfoDictionaryObject``
+/// - ``PartialInfoDictionaryObject``
 public protocol InfoDictionaryObject<Input, Output>: ObjectProcessor {
 	/// The type of the argument for ``process(_:)``.
 	// Shadows `ObjectProcessor.Input`

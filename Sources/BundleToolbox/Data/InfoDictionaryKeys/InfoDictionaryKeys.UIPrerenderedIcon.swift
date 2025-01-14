@@ -2,12 +2,15 @@
 public extension InfoDictionaryKeys {
 	/// The info dictionary key for ``kUIPrerenderedIconKey``.
 	///
-	/// ## See Also
+	/// ## Topics
+	/// ### Convenience
 	/// - ``InfoDictionaryObject/uiPrerenderedIcon``
 	struct UIPrerenderedIcon: InfoDictionaryKey {
 		public typealias Output = Bool
 
-		public static var infoDictionaryKey: String { kUIPrerenderedIconKey }
+		public static var infoDictionaryKey: String {
+			kUIPrerenderedIconKey
+		}
 
 		public init() { }
 	}
