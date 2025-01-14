@@ -33,9 +33,16 @@
 - ``InfoDictionaryObject/cfBundleShortVersionString``
 - ``InfoDictionaryObject/cfBundleSpokenName``
 - ``InfoDictionaryObject/cfBundleVersion``
+- ``InfoDictionaryObject/lsArchitecturePriority``
+- ``InfoDictionaryObject/lsBackgroundOnly``
+- ``InfoDictionaryObject/lsEnvironment``
+- ``InfoDictionaryObject/lsFileQuarantineEnabled``
+- ``InfoDictionaryObject/lsFileQuarantineExcludedPathPatterns``
 - ``InfoDictionaryObject/lsMinimumSystemVersion``
 - ``InfoDictionaryObject/lsMinimumSystemVersionByArchitecture``
+- ``InfoDictionaryObject/lsMultipleInstancesProhibited``
 - ``InfoDictionaryObject/lsRequiresIPhoneOS``
+- ``InfoDictionaryObject/lsRequiresNativeExecution``
 - ``InfoDictionaryObject/lsUIElement``
 - ``InfoDictionaryObject/lsUIPresentationMode``
 - ``InfoDictionaryObject/minimumOSVersion``

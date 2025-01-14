@@ -90,6 +90,50 @@ public let kCFBundleSpokenNameKey: String = "CFBundleSpokenName"
 @available(iOS 13, macOS 10.15, *)
 public let kCFBundleSymbolNameKey: String = "CFBundleSymbolName"
 
+/// The category that best describes your app for the App Store.
+///
+/// The constant for
+/// [`LSApplicationCategoryType`]( https://developer.apple.com/documentation/bundleresources/information-property-list/lsapplicationcategorytype ).
+// VALIDATE: The platform versions are not explicitly defined in the official documentation,
+// and are assumed based on the OS version the App Store was introduced in.
+@available(iOS 2, macOS 10.6.6, tvOS 9, watchOS 2, *)
+public let kLSApplicationCategoryTypeKey: String = "LSApplicationCategoryType"
+
+/// An array of the architectures that the app supports, arranged according to their preferred usage.
+///
+/// The constant for
+/// [`LSArchitecturePriority`]( https://developer.apple.com/documentation/bundleresources/information-property-list/lsarchitecturepriority ).
+@available(macOS 10.1, *)
+public let kLSArchitecturePriorityKey: String = "LSArchitecturePriority"
+
+/// A Boolean value indicating whether the app runs only in the background.
+///
+/// The constant for
+/// [`LSBackgroundOnly`]( https://developer.apple.com/documentation/bundleresources/information-property-list/lsbackgroundonly ).
+@available(macOS 10, *)
+public let kLSBackgroundOnlyKey: String = "LSBackgroundOnly"
+
+/// Environment variables to set before launching the app.
+///
+/// The constant for
+/// [`LSEnvironment`]( https://developer.apple.com/documentation/bundleresources/information-property-list/lsenvironment ).
+@available(macOS 10, *)
+public let kLSEnvironmentKey: String = "LSEnvironment"
+
+/// A Boolean value indicating whether the files this app creates are quarantined by default.
+///
+/// The constant for
+/// [`LSFileQuarantineEnabled`]( https://developer.apple.com/documentation/bundleresources/information-property-list/lsfilequarantineenabled ).
+@available(macOS 10.5, *)
+public let kLSFileQuarantineEnabledKey: String = "LSFileQuarantineEnabled"
+
+/// An array of strings indicating the paths for which file quarantining should be disabled.
+///
+/// The constant for
+/// [`LSFileQuarantineExcludedPathPatterns`]( https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/LaunchServicesKeys.html#//apple_ref/doc/uid/TP40009250-SW6 ).
+@available(macOS 10.5, *)
+public let kLSFileQuarantineExcludedPathPatternsKey: String = "LSFileQuarantineExcludedPathPatterns"
+
 /// The minimum version of macOS required for the app to run on a set of architectures.
 ///
 /// The constant for
@@ -106,12 +150,26 @@ public let kLSMinimumSystemVersionByArchitectureKey: String = "LSMinimumSystemVe
 @available(macCatalyst 13, macOS 10, *)
 public let kLSMinimumSystemVersionKey: String = "LSMinimumSystemVersion"
 
+/// A Boolean value indicating whether more than one user can launch the app simultaneously.
+///
+/// The constant for
+/// [`LSMultipleInstancesProhibited`]( https://developer.apple.com/documentation/bundleresources/information-property-list/lsmultipleinstancesprohibited ).
+@available(macOS 10, *)
+public let kLSMultipleInstancesProhibitedKey: String = "LSMultipleInstancesProhibited"
+
 /// A Boolean value indicating whether the app must run in iOS.
 ///
 /// The constant for
 /// [`LSRequiresIPhoneOS`]( https://developer.apple.com/documentation/bundleresources/information-property-list/lsrequiresiphoneos ).
 @available(iOS 2, *)
 public let kLSRequiresIPhoneOSKey: String = "LSRequiresIPhoneOS"
+
+/// A Boolean value that indicates whether to require the execution of the app’s native architecture when multiple architectures are available.
+///
+/// The constant for
+/// [`LSRequiresNativeExecution`]( https://developer.apple.com/documentation/bundleresources/information-property-list/lsrequiresnativeexecution ).
+@available(macOS 10, *)
+public let kLSRequiresNativeExecutionKey: String = "LSRequiresNativeExecution"
 
 /// A Boolean value indicating whether the app is an agent app that runs in the background and doesn’t appear in the Dock.
 ///

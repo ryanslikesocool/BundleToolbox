@@ -18,9 +18,16 @@ Constants for info dictionary keys that are not already declared by a system fra
 - ``kCFBundleShortVersionStringKey``
 - ``kCFBundleSpokenNameKey``
 - ``kCFBundleSymbolNameKey``
+- ``kLSArchitecturePriorityKey``
+- ``kLSBackgroundOnlyKey``
+- ``kLSEnvironmentKey``
+- ``kLSFileQuarantineEnabledKey``
+- ``kLSFileQuarantineExcludedPathPatternsKey``
 - ``kLSMinimumSystemVersionByArchitectureKey``
 - ``kLSMinimumSystemVersionKey``
+- ``kLSMultipleInstancesProhibitedKey``
 - ``kLSRequiresIPhoneOSKey``
+- ``kLSRequiresNativeExecutionKey``
 - ``kLSUIElementKey``
 - ``kLSUIPresentationModeKey``
 - ``kMinimumOSVersionKey``
