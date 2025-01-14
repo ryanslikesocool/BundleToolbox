@@ -4,12 +4,15 @@ import DeclarativeCore
 public extension InfoDictionaryKeys {
 	/// The info dictionary key for ``kCFBundleIconsKey``.
 	///
-	/// ## See Also
+	/// ## Topics
+	/// ### Convenience
 	/// - ``InfoDictionaryObject/cfBundleIcons``
 	struct CFBundleIcons: InfoDictionaryKey {
 		public typealias Output = [String: Any]
 
-		public static var infoDictionaryKey: String { kCFBundleIconsKey }
+		public static var infoDictionaryKey: String {
+			kCFBundleIconsKey
+		}
 
 		public init() { }
 	}

@@ -2,12 +2,15 @@
 public extension InfoDictionaryKeys {
 	/// The info dictionary key for ``kCFBundleAllowMixedLocalizationsKey``.
 	///
-	/// ## See Also
+	/// ## Topics
+	/// ### Convenience
 	/// - ``InfoDictionaryObject/cfBundleDevelopmentRegion``
 	struct CFBundleAllowMixedLocalizations: InfoDictionaryKey {
 		public typealias Output = Bool
 
-		public static var infoDictionaryKey: String { kCFBundleAllowMixedLocalizationsKey }
+		public static var infoDictionaryKey: String {
+			kCFBundleAllowMixedLocalizationsKey
+		}
 
 		public init() { }
 	}

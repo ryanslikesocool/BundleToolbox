@@ -2,12 +2,15 @@
 public extension InfoDictionaryKeys {
 	/// The info dictionary key for ``kNSHumanReadableCopyrightKey``.
 	///
-	/// ## See Also
+	/// ## Topics
+	/// ### Convenience
 	/// - ``InfoDictionaryObject/nsHumanReadableCopyright``
 	struct NSHumanReadableCopyright: InfoDictionaryKey {
 		public typealias Output = String
 
-		public static var infoDictionaryKey: String { kNSHumanReadableCopyrightKey }
+		public static var infoDictionaryKey: String {
+			kNSHumanReadableCopyrightKey
+		}
 
 		public init() { }
 	}

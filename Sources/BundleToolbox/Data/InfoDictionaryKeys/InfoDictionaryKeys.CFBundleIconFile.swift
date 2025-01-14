@@ -1,3 +1,4 @@
+import class Foundation.Bundle
 #if canImport(AppKit)
 import AppKit
 #endif
@@ -9,12 +10,15 @@ import DeveloperToolsSupport
 public extension InfoDictionaryKeys {
 	/// The info dictionary key for ``kCFBundleIconFileKey``.
 	///
-	/// ## See Also
+	/// ## Topics
+	/// ### Convenience
 	/// - ``InfoDictionaryObject/cfBundleIconFile``
 	struct CFBundleIconFile: InfoDictionaryKey {
 		public typealias Output = String
 
-		public static var infoDictionaryKey: String { kCFBundleIconFileKey }
+		public static var infoDictionaryKey: String {
+			kCFBundleIconFileKey
+		}
 
 		public init() { }
 	}
@@ -48,7 +52,7 @@ public extension InfoDictionaryKeys.CFBundleIconFile {
 	) -> some InfoDictionaryObject<Self.Input, NSImage> {
 		map { (input: Self.Output) throws -> NSImage in
 			guard let nsImage: NSImage = bundle.image(forResource: input) else {
-				throw InfoDictionaryError.unexpectedNil
+				throw InfoDictionaryError.missingBundleResource(named: input)
 			}
 			return nsImage
 		}

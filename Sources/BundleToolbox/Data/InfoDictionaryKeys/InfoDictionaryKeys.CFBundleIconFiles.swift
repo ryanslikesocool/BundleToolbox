@@ -5,13 +5,16 @@ import class Foundation.Bundle
 public extension InfoDictionaryKeys {
 	/// The info dictionary key for ``kCFBundleIconFilesKey``.
 	///
-	/// ## See Also
+	/// ## Topics
+	/// ### Convenience
 	/// - ``InfoDictionaryObject/cfBundleIconFiles``
 	/// - ``InfoDictionaryKeys/CFBundlePrimaryIcon/cfBundleIconFiles``
 	struct CFBundleIconFiles: InfoDictionaryKey {
 		public typealias Output = [String]
 
-		public static var infoDictionaryKey: String { kCFBundleIconFilesKey }
+		public static var infoDictionaryKey: String {
+			kCFBundleIconFilesKey
+		}
 
 		public init() { }
 	}
