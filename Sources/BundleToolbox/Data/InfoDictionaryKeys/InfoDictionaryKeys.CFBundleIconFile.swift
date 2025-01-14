@@ -1,3 +1,4 @@
+import class Foundation.Bundle
 #if canImport(AppKit)
 import AppKit
 #endif

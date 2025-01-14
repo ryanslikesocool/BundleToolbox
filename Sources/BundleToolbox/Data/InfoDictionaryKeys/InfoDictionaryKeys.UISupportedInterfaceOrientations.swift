@@ -27,13 +27,13 @@ public extension InfoDictionaryKeys {
 			guard let infoDictionaryValue = input.object(forInfoDictionaryKey: Self.infoDictionaryKey) else {
 				throw InfoDictionaryError.missingValue(forKey: Self.infoDictionaryKey)
 			}
-			guard let arrayVaue = infoDictionaryValue as? [String] else {
+			guard let arrayValue = infoDictionaryValue as? [String] else {
 				throw InfoDictionaryError.castFailed(from: infoDictionaryValue, to: [String].self)
 			}
 #if canImport(UIKit)
-			return arrayVaue.map(Output.init(infoDictionaryValue:))
+			return arrayValue.map(Output.Element.init(infoDictionaryValue:))
 #else
-			return arrayVaue
+			return arrayValue
 #endif
 		}
 	}
