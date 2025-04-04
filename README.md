@@ -8,7 +8,8 @@ APIs.
 
 **This package is under development and not considered production-ready.**
 <br/>
-Breaking changes are common, documentation is incomplete, and support is limited.  Use at your own risk.
+Breaking changes are common, documentation is incomplete, and support is limited.
+Use at your own risk.
 
 ---
 
@@ -17,7 +18,7 @@ Breaking changes are common, documentation is incomplete, and support is limited
 
 Add the following entry to your package dependencies...
 ```swift
-.package(url: "https://github.com/ryanslikesocool/BundleToolbox.git", from: "0.0.6"),
+.package(url: "https://github.com/ryanslikesocool/BundleToolbox.git", from: "0.0.7"),
 ```
 ...and your target dependencies.
 ```swift
