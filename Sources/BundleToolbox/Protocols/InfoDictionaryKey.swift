@@ -1,4 +1,4 @@
-import class Foundation.Bundle
+import Foundation
 
 /// A key for accessing values in a bundle's info dictionary.
 public protocol InfoDictionaryKey: InfoDictionaryObject where
@@ -51,12 +51,60 @@ public extension InfoDictionaryKey {
 		guard let infoDictionaryValue = input.object(forInfoDictionaryKey: Self.infoDictionaryKey) else {
 			throw InfoDictionaryError.missingValue(forKey: Self.infoDictionaryKey)
 		}
-		guard let rawValue = infoDictionaryValue as? Output.RawValue else {
-			throw InfoDictionaryError.castFailed(from: infoDictionaryValue, to: Output.RawValue.self)
+
+		switch infoDictionaryValue {
+			case let resultValue as Output:
+				return resultValue
+			case let rawValue as Output.RawValue:
+				guard let resultValue = Output(rawValue: rawValue) else {
+					throw InfoDictionaryError.conversionFailed(from: rawValue, to: Output.self)
+				}
+				return resultValue
+			default:
+				throw InfoDictionaryError.conversionFailed(from: infoDictionaryValue, to: Output.self)
 		}
-		guard let resultValue = Output(rawValue: rawValue) else {
-			throw InfoDictionaryError.conversionFailed(from: rawValue, to: Output.self)
+	}
+
+	// VALIDATE: Ensure that this implementation is preferred over the default when possible.
+	func process(_ input: Input) throws -> Output where
+		Output: LosslessStringConvertible
+	{
+		guard let infoDictionaryValue = input.object(forInfoDictionaryKey: Self.infoDictionaryKey) else {
+			throw InfoDictionaryError.missingValue(forKey: Self.infoDictionaryKey)
 		}
-		return resultValue
+
+		switch infoDictionaryValue {
+			case let resultValue as Output:
+				return resultValue
+			case let stringValue as String:
+				guard let resultValue = Output(stringValue) else {
+					throw InfoDictionaryError.conversionFailed(from: stringValue, to: Output.self)
+				}
+				return resultValue
+			default:
+				throw InfoDictionaryError.conversionFailed(from: infoDictionaryValue, to: Output.self)
+		}
+	}
+
+	// Do we actually want to provide a default implementation for URLs?
+	// VALIDATE: Ensure that this implementation is preferred over the default when possible.
+	func process(_ input: Input) throws -> Output where
+		Output == URL
+	{
+		guard let infoDictionaryValue = input.object(forInfoDictionaryKey: Self.infoDictionaryKey) else {
+			throw InfoDictionaryError.missingValue(forKey: Self.infoDictionaryKey)
+		}
+
+		switch infoDictionaryValue {
+			case let resultValue as Output:
+				return resultValue
+			case let stringValue as String:
+				guard let resultValue = Output(string: stringValue) else {
+					throw InfoDictionaryError.conversionFailed(from: String.self, to: Output.self)
+				}
+				return resultValue
+			default:
+				throw InfoDictionaryError.conversionFailed(from: infoDictionaryValue, to: Output.self)
+		}
 	}
 }
