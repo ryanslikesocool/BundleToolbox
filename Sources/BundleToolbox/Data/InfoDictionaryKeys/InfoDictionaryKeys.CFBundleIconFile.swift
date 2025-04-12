@@ -47,6 +47,7 @@ public extension InfoDictionaryKeys.CFBundleIconFile {
 	/// Load the image from the given `bundle`.
 	///
 	/// - Parameter bundle: The bundle to load the image from.
+	@available(macCatalyst, unavailable)
 	func asNSImage(
 		in bundle: Bundle
 	) -> some InfoDictionaryObject<Self.Input, NSImage> {
